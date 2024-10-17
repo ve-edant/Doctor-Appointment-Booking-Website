@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0% !important;
+  padding: 0% !important;
+}
+
+.active hr {
+  @apply bg-primary;
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+
